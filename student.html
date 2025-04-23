@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Survey Form</title>
+  <link rel="stylesheet" href="student.css">
+</head>
+<body>
+  <h1 id="title">Student Feedback Survey</h1>
+  <p id="description">
+    <strong>Purpose:</strong><br>
+    This survey is designed to collect feedback from students regarding their academic experiences, campus facilities, and overall satisfaction with school services. Your responses will help us improve the quality of education and student life in our institution.
+    <br><br>
+    <strong>Instructions:</strong><br>
+    Please answer the following questions honestly and to the best of your ability. The survey will take approximately 5–10 minutes to complete. All responses are confidential and will be used for research and improvement purposes only.
+    <br><br>
+    <strong>Note:</strong><br>
+    There are no right or wrong answers. We value your honest opinions.
+  </p>
+
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter Name" required />
+
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter Email" required />
+
+    <label for="number" id="number-label">Age:</label>
+    <input type="number" id="number" name="age" placeholder="Enter Age" min="1" max="99" />
+
+    <label for="gender">Gender:</label>
+    <select id="dropdown" name="gender">
+      <option value="">--Select--</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+    <label>Department:</label>
+    <input type="radio" id="basic" name="department" value="basic">
+    <label for="basic">Basic School Department (Grade 1 to 12)</label><br>
+    <input type="radio" id="college" name="department" value="college">
+    <label for="college">College Department</label>
+
+    <label>What topics are you most interested in?</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="interests" value="academics"> Academics</label>
+      <label><input type="checkbox" name="interests" value="facilities"> Campus Facilities</label>
+      <label><input type="checkbox" name="interests" value="support"> Student Support</label>
+      <label><input type="checkbox" name="interests" value="extracurricular"> Extracurricular Activities</label>
+    </div>
+
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" name="comments" placeholder="Your feedback here..."></textarea>
+
+    <input type="submit" id="submit" value="Submit Survey" />
+  </form>
+
+  
+</body>
+</html>
